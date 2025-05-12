@@ -101,16 +101,20 @@ const useDataBrands = () => {
     }
   }
   return{
-    id,
-    setId,
-    nameBrand,
-    setNameBrand,
-    brands,
-    setBrands,
-    loading,
-    setLoading,
-    fetchBrands,
-    updateBrands,
-    deleteBrand,
+   activeTab,
+  setActiveTab,
+  id,
+  setId,
+  nameBrand,
+  setNameBrand,
+  brands,
+  loading,
+  fetchBrands,
+  saveBrand,
+  deleteBrand,
+  updateBrands,
+  handleEdit
   }
 }
+
+export default useDataBrands
