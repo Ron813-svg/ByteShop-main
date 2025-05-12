@@ -101,7 +101,7 @@ const useDataBrands = () => {
     }
   }
   return{
-   activeTab,
+  activeTab,
   setActiveTab,
   id,
   setId,

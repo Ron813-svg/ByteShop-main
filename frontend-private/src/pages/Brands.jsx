@@ -1,9 +1,24 @@
 import React, { useState, useEffect } from "react";
 import ListBrands from "../components/Brands/ListBrands";
 import RegisterBrand from "../components/Brands/RegisterBrand";
+import useDataBrands from "../components/Employees/hooks/useDataBrands";
+
 const Brands = () => {
-  
-  };
+  const{
+  activeTab,
+  setActiveTab,
+  id,
+  setId,
+  nameBrand,
+  setNameBrand,
+  brands,
+  loading,
+  fetchBrands,
+  saveBrand,
+  deleteBrand,
+  updateBrands,
+  handleEdit
+  } = useDataBrands();
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
@@ -54,4 +69,7 @@ const Brands = () => {
     </div>
   );
 };
+
+
+  
 export default Brands;
